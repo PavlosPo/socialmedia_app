@@ -1,0 +1,21 @@
+.sticky-top-manual {
+  position: sticky;
+  top: 160px;
+}
+
+.left-side-manual {
+  min-width: 250px; 
+  max-width: 300px;
+  position: sticky;
+  top: 160px;
+  background-color: transparent;
+  padding-right: 0;
+  margin-right: 0;
+  
+}
+
+
+.right-side-manual {
+  min-width: 160px;
+  max-width: 350px;
+}
