@@ -206,7 +206,7 @@ header section .profile_post_follow_bx .profile_bx .profile_card {
   flex-direction: column;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card .blue_tick_pc {
+header section .profile_post_follow_bx .profile_bx .profile_card .profile_icon {
   position: absolute;
   top: 10px;
   left: 10px;
