@@ -1,18 +1,69 @@
+/* Original CSS */
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Updated CSS with responsive font sizes */
+h1 {
+  font-size: 2rem;
+  /* Equivalent to 32px */
+}
+
+p {
+  font-size: 1rem;
+  /* Equivalent to 16px */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    /* Equivalent to 24px */
+  }
+
+  p {
+    font-size: 0.875rem;
+    /* Equivalent to 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem;
+    /* Equivalent to 20px */
+  }
+
+  p {
+    font-size: 0.75rem;
+    /* Equivalent to 12px */
+  }
+}
+
 :root {
   --text_color: #000000;
   --text_color_swap: #b30000;
   --background: #ffffff;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -57,7 +108,7 @@ header aside ul li {
   margin-top: 10px;
 }
 
-header aside ul li a{
+header aside ul li a {
   text-decoration: none;
   color: var(--text_color);
   font-size: 16px;
@@ -67,7 +118,7 @@ header aside ul li a{
   transition: .3s linear;
 }
 
-header aside ul li a:hover{
+header aside ul li a:hover {
   color: var(--text_color_swap);
 }
 
@@ -92,7 +143,7 @@ header section nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 0 5%; 
+  padding-bottom: 0 5%;
 }
 
 header section nav ul {
@@ -113,7 +164,7 @@ header section nav ul li a {
   transition: .3s linear;
 }
 
-header section nav ul li a:hover{
+header section nav ul li a:hover {
   color: var(--text_color_swap);
 }
 
@@ -131,7 +182,7 @@ header section nav .search_bar {
 
 
 
-header section nav .search_bar input{
+header section nav .search_bar input {
   width: 90%;
   padding: 3px 15px;
   border: none;
@@ -140,24 +191,24 @@ header section nav .search_bar input{
   background: none;
 }
 
-header section nav .search_bar .bi{
+header section nav .search_bar .bi {
   font-size: 14px;
 }
 
 header section nav .user {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text_color);
 }
 
 
-header section nav .user h6{
+header section nav .user h6 {
   font-size: 14px;
   font-weight: 600;
 }
 
-header section nav .user img{
+header section nav .user img {
   margin-left: 10px;
   width: 30px;
   height: 30px;
@@ -166,14 +217,14 @@ header section nav .user img{
 
 
 /* Background Profile Image works, but who cares. */
-header section::before { 
+header section::before {
   content: '';
   position: absolute;
-  width: 100%; 
+  width: 100%;
   height: 200px;
   /* background: url(https://images.unsplash.com/photo-1441312311734-f44cc0bda31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80); */
   /* It should be 8% but does not understand's it. */
-  top: 8%; 
+  top: 8%;
   border-radius: 0px 0px 20px 0px;
   opacity: .9;
 }
@@ -190,7 +241,7 @@ header section .profile_post_follow_bx {
 }
 
 
-header section .profile_post_follow_bx .profile_bx{
+header section .profile_post_follow_bx .profile_bx {
   width: 250px;
   height: auto;
   /* border: 1px solid black; */
@@ -223,7 +274,7 @@ header section .profile_post_follow_bx .profile_bx .profile_card .profile_img {
   border-radius: 50%;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card h5{
+header section .profile_post_follow_bx .profile_bx .profile_card h5 {
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -237,20 +288,20 @@ header section .profile_post_follow_bx .profile_bx .profile_card h6 {
   margin-top: 10px;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card address{
+header section .profile_post_follow_bx .profile_bx .profile_card address {
   display: flex;
   align-items: center;
   margin-top: 8px;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card address a{
+header section .profile_post_follow_bx .profile_bx .profile_card address a {
   text-decoration: none;
   color: #000;
   font-size: 14px;
   font-style: normal;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card p{
+header section .profile_post_follow_bx .profile_bx .profile_card p {
   font-size: 12px;
   font-weight: 600;
   text-align: center;
@@ -259,7 +310,7 @@ header section .profile_post_follow_bx .profile_bx .profile_card p{
   color: rgb(0, 0, 0, 0.7);
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card .data{
+header section .profile_post_follow_bx .profile_bx .profile_card .data {
   width: 100%;
   display: flex;
   align-items: center;
@@ -267,16 +318,17 @@ header section .profile_post_follow_bx .profile_bx .profile_card .data{
   margin-top: 10px;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card{
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card {
   width: 33.3%;
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card:nth-child(2){
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card:nth-child(2) {
   border-left: 1px solid rgb(0, 0, 0, 0.2);
   border-right: 1px solid rgb(0, 0, 0, 0.2);
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card p, h4{
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card p,
+h4 {
   text-align: center;
   font-size: 10px;
   margin-bottom: 5px;
@@ -284,7 +336,7 @@ header section .profile_post_follow_bx .profile_bx .profile_card .data .data_car
   color: var(--text_color);
 }
 
-header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card h4{
+header section .profile_post_follow_bx .profile_bx .profile_card .data .data_card h4 {
   text-align: center;
   font-size: 12px;
   padding: 3px 0px 7px 0px;
@@ -303,7 +355,7 @@ header section .profile_post_follow_bx .profile_bx .activity_bx {
   margin-top: 10px;
 }
 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx{
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx {
   width: 115px;
   height: 90px;
   border: 2px solid rgb(213, 218, 222, 0.5);
@@ -317,13 +369,14 @@ header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_b
   cursor: pointer;
 }
 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:nth-child(1){
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:nth-child(1) {
   background-color: var(--background);
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   border: 1px solid var(--text_color_swap);
 }
 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx i, h6{
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx i,
+h6 {
   font-size: 13px;
   color: var(--text_color_swap);
   opacity: .6;
@@ -338,12 +391,12 @@ header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_b
   /* opacity: 0.8; */
 }
 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:hover h6{
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:hover h6 {
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   color: var(--text_color);
 }
 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:hover i{
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:hover i {
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   color: var(--text_color);
 }
@@ -354,13 +407,14 @@ header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_b
   background-color: var(--text_color_swap);
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   border: #fff;
-} 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:nth-child(1) i{
+}
+
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:nth-child(1) i {
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   color: var(--text_color);
 }
 
-header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:nth-child(1) h6{
+header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_bx:nth-child(1) h6 {
   box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
   color: var(--text_color);
 }
@@ -383,7 +437,7 @@ header section .profile_post_follow_bx .post_follow_bx .post {
   border-radius: 8px;
 }
 
-header section .profile_post_follow_bx .post_follow_bx .follow_bx{
+header section .profile_post_follow_bx .post_follow_bx .follow_bx {
   width: 20px;
   height: 100%;
   margin-left: 15px;
@@ -395,7 +449,7 @@ header section .profile_post_follow_bx .post_follow_bx .post nav {
   height: 10%;
 }
 
-header section .profile_post_follow_bx .post_follow_bx .post nav li{
+header section .profile_post_follow_bx .post_follow_bx .post nav li {
   border-bottom: 3px solid transparent;
   display: flex;
   align-items: center;
@@ -405,7 +459,7 @@ header section .profile_post_follow_bx .post_follow_bx .post nav li{
   transition: .1s linear;
 }
 
-header section .profile_post_follow_bx .post_follow_bx .post nav li:hover{
+header section .profile_post_follow_bx .post_follow_bx .post nav li:hover {
   border-bottom: 3px solid var(--text_color_swap);
 }
 
@@ -429,15 +483,150 @@ header section .profile_post_follow_bx .post_follow_bx .post nav i:hover {
   color: rgb(0, 0, 0, 0.6);
 }
 
-header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx{
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx {
   width: 100%;
-  height: 90%;
-  border: 1px solid black;
-  
+  height: auto;
+  background-color: var(--background);
+  padding: 12px 15px 0px 15px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content {
+  width: 90%;
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  border-block-start-width: 5px;
+  padding: 0px 10px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .repost {
+  columns: var(--text_color);
+  opacity: 0.5;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .repost i {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 5px;
+
+  opacity: 0.7;
 }
 
 
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h5 i {
+  width: 15px;
+  margin-left: 10px;
+}
 
 
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h5 p {
+  font-size: 12px;
+  color: var(--text_color);
+  margin-left: 5px;
+}
 
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h6 {
+  color: var(--text_color);
+  font-weight: 500;
+  font-size: 11px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .user_name_time h6 i {
+  font-size: 12px;
+  margin-right: 3px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content h3 {
+  font-size: 11px;
+  font-weight: 500;
+  word-break: break-all;
+  margin-top: 10px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .repost_content_bx {
+  width: 95%;
+  height: auto;
+  padding: 5px 10px;
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .repost_content_bx .user_name_time h5 img:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data .post_social_card {
+  width: 25%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data .post_social_card:nth-child(2) {
+  border-left: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data .post_social_card:nth-child(3) {
+  border-left: 1px solid rgb(0, 0, 0, 0.2);
+  border-right: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data .post_social_card i {
+color: rgb(0, 0, 0, 0.2);
+margin-right: 5px;
+font-size: 14px;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data .post_social_card span{
+  font-optical-sizing: 13px;
+  font-weight: 500;
+}
+
+header section .profile_post_follow_bx .post_follow_bx .post .post_main_bx .post_card_bx .content .post_card_social_data .post_social_card:nth-child(3) i{
+  color: red;
+}
 
