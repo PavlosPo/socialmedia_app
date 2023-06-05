@@ -11,6 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -33,7 +34,7 @@ header {
 
 
 header aside {
-  width: 15%;
+  width: 250px;
   height: 100%;
   background-color: var(--background);
   padding: 15px 0px 15px 30px;
@@ -174,32 +175,34 @@ header section nav .user img {
 
 
 /* Background Profile Image works, but who cares. */
-header section::before {
+/* header section::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 200px;
-  /* background: url(https://images.unsplash.com/photo-1441312311734-f44cc0bda31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80); */
-  /* It should be 8% but does not understand's it. */
+  background: url(https://images.unsplash.com/photo-1441312311734-f44cc0bda31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+
   top: 8%;
   border-radius: 0px 0px 20px 0px;
   opacity: .9;
-}
+} */
 
 header section .profile_post_follow_bx {
   position: relative;
   width: 100%;
-  height: 73%;
+  height: 100%;
+  margin-top: 40px;
+  /* margin-left: 20px; */
   /* border: 1px solid black ; */
-  top: 18%;
+  /* top: 18%; */
   display: flex;
   /* Here the boxes start from the right */
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 
 header section .profile_post_follow_bx .profile_bx {
-  width: 250px;
+  width: 300px;
   height: auto;
   /* border: 1px solid black; */
 }
@@ -379,10 +382,11 @@ header section .profile_post_follow_bx .profile_bx .activity_bx .activity_card_b
 /* Post Follow Box Section */
 
 header section .profile_post_follow_bx .post_follow_bx {
-  width: auto;
+  position: relative;
+  width: 540px;
   height: auto;
   /* border: 1px solid black; */
-  margin-left: 40px;
+  /* margin: 20px; */
   display: flex;
 }
 
