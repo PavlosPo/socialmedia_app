@@ -1,0 +1,145 @@
+.main-section {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+.middle-profile-section {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.profile_main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile_main::before {
+  content: '';
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1441312311734-f44cc0bda31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+  width: 100%;
+  height: 15%;
+  border-radius: 0px 0px 20px 0px;
+  opacity: .9;
+  z-index: -1;
+
+}
+
+/* .profile_bx {
+  width: 250px;
+  height: auto;
+  border: 10px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.profile_card {
+  border: 10px solid green;
+  max-width: 400px;
+  min-width: 200px;
+  width: 34%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
+  padding: 15px 10px 0px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile_icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  color: var(--text_swap);
+  font-size: 1.5rem;
+}
+
+.profile_bx .profile_card h5 {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile_bx .profile_card h6 {
+  color: rgb(0, 0, 0, 0.3);
+  font-size: 12px;
+  padding: 2px 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.profile_bx .profile_card address {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.profile_bx .profile_card address a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.profile_bx .profile_card p {
+font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0px 5px;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.profile_bx .profile_card .data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.profile_bx .profile_card .data_card{
+width: 33.3%;
+}
+
+
+.profile_img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+/* Profile Posts */
+.profile_posts {
+  border: 10px solid purple;
+  width: 64%;
+  position: relative;
+  top: 15%;
+}
+
+
+@media screen and (max-width: 768px){
+  /* Left Side Menu disapears  */
+  .left-side-manual {
+    display: none;
+  }
+  
+  .profile_card {
+    width: 100%;
+  }
+}
