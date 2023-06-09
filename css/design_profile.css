@@ -8,21 +8,30 @@
 
 .middle-profile-section {
   position: relative;
-  top: 0;
   width: 100%;
   height: 100%;
+  border: 10px solid orange;
 }
 
+.background_image {
+  border: 10px solid royalblue;
+  display: flex;
+}
+
+.background_image img {
+  justify-self: center;
+  align-self: center;
+}
 
 .profile_main {
-  position: relative;
+  top: 150px;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.profile_main::before {
+/* .profile_main::after {
   content: '';
   position: absolute;
   background-image: url(https://images.unsplash.com/photo-1441312311734-f44cc0bda31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
@@ -31,8 +40,7 @@
   border-radius: 0px 0px 20px 0px;
   opacity: .9;
   z-index: -1;
-
-}
+} */
 
 /* .profile_bx {
   width: 250px;
@@ -45,15 +53,19 @@
 
 .profile_card {
   border: 10px solid green;
+  height: 100%;
+  width: 34%;
   max-width: 400px;
   min-width: 200px;
-  width: 34%;
-  height: 100%;
-  position: relative;
+  
   background-color: white;
   box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
   padding: 15px 10px 0px 10px;
   border-radius: 8px;
+  
+  
+  position: sticky;
+  top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,13 +81,13 @@
   font-size: 1.5rem;
 }
 
-.profile_bx .profile_card h5 {
+.profile_card h5 {
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.profile_bx .profile_card h6 {
+.profile_card h6 {
   color: rgb(0, 0, 0, 0.3);
   font-size: 12px;
   padding: 2px 0px;
@@ -83,20 +95,20 @@
   margin-top: 10px;
 }
 
-.profile_bx .profile_card address {
+.profile_card address {
   display: flex;
   align-items: center;
   margin-top: 8px;
 }
 
-.profile_bx .profile_card address a {
+.profile_card address a {
   text-decoration: none;
   color: #000;
   font-size: 14px;
   font-style: normal;
 }
 
-.profile_bx .profile_card p {
+.profile_card p {
 font-size: 12px;
   font-weight: 600;
   text-align: center;
@@ -105,7 +117,7 @@ font-size: 12px;
   color: rgb(0, 0, 0, 0.7);
 }
 
-.profile_bx .profile_card .data {
+.profile_card .data {
   width: 100%;
   display: flex;
   align-items: center;
@@ -113,7 +125,7 @@ font-size: 12px;
   margin-top: 10px;
 }
 
-.profile_bx .profile_card .data_card{
+.profile_card .data_card{
 width: 33.3%;
 }
 
@@ -127,9 +139,9 @@ width: 33.3%;
 /* Profile Posts */
 .profile_posts {
   border: 10px solid purple;
+  max-width: 670px;
   width: 64%;
   position: relative;
-  top: 15%;
 }
 
 
