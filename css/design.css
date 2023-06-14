@@ -78,5 +78,5 @@
   min-width: 160px;   
   max-width: 350px;
   position: sticky;
-  top: 100px;
+  /* top: 1000px; */
 }
